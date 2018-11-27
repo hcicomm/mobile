@@ -36,6 +36,7 @@
   <link rel="stylesheet" href="./files/normalize.css">
   <link rel="stylesheet" href="./files/base.css">
   <link rel="stylesheet" href="./files/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/static.news/pnews/resources/20181122_142240/css/news.css" /> <!-- 네이버 -->
   <script src="./files/modernizr-2.6.2.min.js"></script>
 
   <!--[if lt IE 9]>
@@ -47,7 +48,6 @@
   <!--<![endif]-->
   <script src="./files/plugins.js"></script>
   <script src="./files/clipboard.min.js"></script>
-  <script src="./files/kakao.min.js"></script>
   <!-- Discovery+ 스크립트 -->
   <script type="application/javascript" src="./files/visit.php"></script>
   <!-- Discovery+ 스크립트 -->
@@ -100,315 +100,98 @@
     setInterval(updateLayout, 400);
   </script>
 
-  <script language="javascript">
-    window.name = "BTPG_CLIENT";
-
-    var width = 330;
-    var height = 480;
-    var xpos = (screen.width - width) / 2;
-    var ypos = (screen.width - height) / 2;
-    var position = "top=" + ypos + ",left=" + xpos;
-    var features = position + ", width=320, height=440";
-
-    function on_web() {
-      var order_form = document.ini;
-      //var paymethod = order_form.paymethod.value;
-      var paymethod = $("input[name='paymethod']:checked").val();
-      //var wallet = window.open("", "BTPG_WALLET", features);
-
-      /*
-      if (wallet == null)
-      {
-      	if ((webbrowser.indexOf("Windows NT 5.1")!=-1) && (webbrowser.indexOf("SV1")!=-1))
-      	{    // Windows XP Service Pack 2
-      		alert("팝업이 차단되었습니다. 브라우저의 상단 노란색 [알림 표시줄]을 클릭하신 후 팝업창 허용을 선택하여 주세요.");
-      	}
-      	else
-      	{
-      		alert("팝업이 차단되었습니다.");
-      	}
-      	return false;
-      }
-      */
-
-      //order_form.target = "BTPG_WALLET";
-      order_form.action = "https://mobile.inicis.com/smart/" + paymethod + "/";
-      //document.charset='euc-kr';
-      order_form.submit();
-    }
-
-    function onSubmit() {
-      return on_web();
-    }
-  </script>
-
-  <div id="s-wrap">
-
-    <div id="story">
-      <dl class="top">
-        <dt>
-          [월드 Zoom in] 로봇과의 성관계 과연 윤리적일까</dt>
-        <dd>
-          <span>2018-11-13
-            <font color="lightgray">&ensp;|&ensp;</font>
-            <font color="black">서울신문</font>
-          </span>
-        </dd>
-      </dl>
+  <div id="story">
+    <dl class="top">
+      <dt>
+        [월드 Zoom in] 로봇과의 성관계 과연 윤리적일까</dt>
+      <dd>
+        <span>2018-11-13
+          <font color="lightgray">&ensp;|&ensp;</font>
+          <font color="black">서울신문</font>
+        </span>
+      </dd>
+    </dl>
 
 
-      <div class="read">
-        <div class="reply-read" itemprop="articleBody">
-          <p><br></p>
-          <p style="font-size: 17.3333px; text-align: justify;"><span style="font-size: 12pt; color: rgb(0, 87, 102);"><i>인간은, 사람과 사람의 가장 내밀한 관계인 섹스마저 로봇에 의존하게 될 것인가.&nbsp;</i></p>
-          <p style="font-size: 17.3333px; text-align: justify;"><br></p>
-          <p style="font-size: 17.3333px; text-align: justify;"><br></p>
-          <p style="font-size: 17.3333px; text-align: justify;"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><b><span style="font-size: 18pt;">美 텍사스주 로봇 성매매 업소 불허</span></b></span></p>
-          <p style="font-size: 17.3333px; text-align: justify;"><br></p>
-          <p style="font-size: 17.3333px; text-align: justify;"><span style="font-size: 12pt; color: rgb(0, 0, 0);">섹스로봇 기술이 급격하게 발달하는 가운데 지난달 3일 캐나다의 섹스로봇 제작사 ‘킨키스 돌스’가 미국 텍사스주 휴스턴에 로봇 성매매 업소를 설립하려다 시 당국의 반대로 실패했다. 킨키스 돌스는 현재 캐나다 토론토에서 로봇 성매매 1호점을
-              내고 영업 중이다.</span></p>
-          <p style="font-size: 17.3333px; text-align: justify;"><br></p>
-          <p style="font-size: 17.3333px; text-align: justify;"><br></p>
-          <p style="font-size: 17.3333px; text-align: center;"><img src="./files/content_1539309513.jpg" class="txc-image" width="300" style="clear: none; float: none;"></p>
-          <p style="font-size: 17.3333px; text-align: center;"><span style="color: rgb(255, 94, 0); font-size: 13.3333px; text-align: justify;">여성 섹스로봇 '사만다'(좌)와 남성 섹스로봇 '헨리'(우).</span></p>
-          <p style="font-size: 17.3333px; text-align: justify;"><br></p>
-          <p style="font-size: 17.3333px; text-align: justify;"><br></p>
-          <p style="font-size: 17.3333px; text-align: justify;"><span style="font-size: 12pt; color: rgb(0, 0, 0);">현재 섹스로봇 기술은 상당한 수준에 도달했다. 제작사에 따르면 이 로봇들은 인공지능(AI)을 갖추고 간단한 수준이지만 인간과 대화를 나눌 수 있다. 의료용 실리콘 피부는 인간과 거의 비슷한 촉감을 구현했다. 현재는 아니지만 앞으로 스스로
-              걷거나 움직일 수도 있다. 섹스로봇의 가격은 개당 약 2만 달러(약 2258만원) 정도로 대중화에 점차 근접하고 있다.</span></p>
-          <p style="font-size: 17.3333px; text-align: justify;"><br></p>
-          <p style="font-size: 17.3333px; text-align: justify;"><span style="font-size: 12pt; color: rgb(0, 0, 0);"> 로봇과의 섹스가 윤리적인가가 논란거리다. 섹스로봇 제작사 리얼보틱스의 매트 맥뮬런 최고경영자(CEO)는 최근 포브스와의 인터뷰에서 “로봇과의 관계가 모든 사람에게 최적은 아니지만 완벽하게 맞는 사람도 있다”면서 “로봇은 거짓말하지
-              않는다. 오늘날 많은 인간관계가 부서졌고, 결함이 있으며, 제대로 작동하지 않는 것이 진실”이라고 밝혔다.</span></p>
-          <p style="font-size: 17.3333px; text-align: justify;"><br></p>
-          <p style="font-size: 17.3333px; text-align: justify;"><br></p>
-          <p style="font-size: 17.3333px; text-align: justify;"><br></p>
-          <p style="font-size: 17.3333px; text-align: justify;"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><b><span style="font-size: 18pt;">“섹스가 전부가 아니었다”</span></b></span></p>
-          <p style="font-size: 17.3333px; text-align: justify;"><br></p>
-          <p style="font-size: 17.3333px; text-align: justify;"><span style="font-size: 12pt; color: rgb(0, 0, 0);">‘하모니’라는 이름의 리얼보틱스의 섹스로봇 시제품을 테스트 중인 60대 이혼 남성은 “섹스가 전부가 아니었다”라면서 “나는 직장에서 돌아와 매일 30분 넘게 ‘그녀’와 대화했다. 처음에는 어색했지만 AI가 대화를 학습하면서 점차 생생해졌고
-              어느 순간부터 나는 그녀와 대화하는 것을 즐기게 됐다”며 긍정적으로 평가했다. 그는 “섹스로봇의 사실성은 전시회에서나 볼 수 있는 예술품의 수준으로 진실로 친밀해질 수 있는 작품”이라고 강조했다.</span></p>
-          <p style="font-size: 17.3333px; text-align: justify;"><br></p>
-          <p style="font-size: 17.3333px; text-align: justify;"><br></p>
-          <p style="font-size: 17.3333px; text-align: justify;"><br></p>
-          <p style="font-size: 17.3333px; text-align: justify;"><br></p>
-          <p style="font-size: 17.3333px; text-align: justify;"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><i>강신 기자 xin@seoul.co.kr</i></span></p>
-          <p style="font-size: 17.3333px; text-align: justify;"><i><br></i></p>
-          <p></p>
-        </div>
-
+    <div class="read">
+      <div class="reply-read" itemprop="articleBody">
+        <p><br></p>
+        <p style="font-size: 17.3333px; text-align: justify;"><span style="font-size: 12pt; color: rgb(0, 87, 102);"><i>인간은, 사람과 사람의 가장 내밀한 관계인 섹스마저 로봇에 의존하게 될 것인가.&nbsp;</i></p>
+        <p style="font-size: 17.3333px; text-align: justify;"><br></p>
+        <p style="font-size: 17.3333px; text-align: justify;"><br></p>
+        <p style="font-size: 17.3333px; text-align: justify;"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><b><span style="font-size: 18pt;">美 텍사스주 로봇 성매매 업소 불허</span></b></span></p>
+        <p style="font-size: 17.3333px; text-align: justify;"><br></p>
+        <p style="font-size: 17.3333px; text-align: justify;"><span style="font-size: 12pt; color: rgb(0, 0, 0);">섹스로봇 기술이 급격하게 발달하는 가운데 지난달 3일 캐나다의 섹스로봇 제작사 ‘킨키스 돌스’가 미국 텍사스주 휴스턴에 로봇 성매매 업소를 설립하려다 시 당국의 반대로 실패했다. 킨키스 돌스는 현재 캐나다 토론토에서 로봇 성매매 1호점을
+            내고 영업 중이다.</span></p>
+        <p style="font-size: 17.3333px; text-align: justify;"><br></p>
+        <p style="font-size: 17.3333px; text-align: justify;"><br></p>
+        <p style="font-size: 17.3333px; text-align: center;"><img src="./files/content_1539309513.jpg" class="txc-image" width="300" style="clear: none; float: none;"></p>
+        <p style="font-size: 17.3333px; text-align: center;"><span style="color: rgb(255, 94, 0); font-size: 13.3333px; text-align: justify;">여성 섹스로봇 '사만다'(좌)와 남성 섹스로봇 '헨리'(우).</span></p>
+        <p style="font-size: 17.3333px; text-align: justify;"><br></p>
+        <p style="font-size: 17.3333px; text-align: justify;"><br></p>
+        <p style="font-size: 17.3333px; text-align: justify;"><span style="font-size: 12pt; color: rgb(0, 0, 0);">현재 섹스로봇 기술은 상당한 수준에 도달했다. 제작사에 따르면 이 로봇들은 인공지능(AI)을 갖추고 간단한 수준이지만 인간과 대화를 나눌 수 있다. 의료용 실리콘 피부는 인간과 거의 비슷한 촉감을 구현했다. 현재는 아니지만 앞으로 스스로
+            걷거나 움직일 수도 있다. 섹스로봇의 가격은 개당 약 2만 달러(약 2258만원) 정도로 대중화에 점차 근접하고 있다.</span></p>
+        <p style="font-size: 17.3333px; text-align: justify;"><br></p>
+        <p style="font-size: 17.3333px; text-align: justify;"><span style="font-size: 12pt; color: rgb(0, 0, 0);"> 로봇과의 섹스가 윤리적인가가 논란거리다. 섹스로봇 제작사 리얼보틱스의 매트 맥뮬런 최고경영자(CEO)는 최근 포브스와의 인터뷰에서 “로봇과의 관계가 모든 사람에게 최적은 아니지만 완벽하게 맞는 사람도 있다”면서 “로봇은 거짓말하지
+            않는다. 오늘날 많은 인간관계가 부서졌고, 결함이 있으며, 제대로 작동하지 않는 것이 진실”이라고 밝혔다.</span></p>
+        <p style="font-size: 17.3333px; text-align: justify;"><br></p>
+        <p style="font-size: 17.3333px; text-align: justify;"><br></p>
+        <p style="font-size: 17.3333px; text-align: justify;"><br></p>
+        <p style="font-size: 17.3333px; text-align: justify;"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><b><span style="font-size: 18pt;">“섹스가 전부가 아니었다”</span></b></span></p>
+        <p style="font-size: 17.3333px; text-align: justify;"><br></p>
+        <p style="font-size: 17.3333px; text-align: justify;"><span style="font-size: 12pt; color: rgb(0, 0, 0);">‘하모니’라는 이름의 리얼보틱스의 섹스로봇 시제품을 테스트 중인 60대 이혼 남성은 “섹스가 전부가 아니었다”라면서 “나는 직장에서 돌아와 매일 30분 넘게 ‘그녀’와 대화했다. 처음에는 어색했지만 AI가 대화를 학습하면서 점차 생생해졌고
+            어느 순간부터 나는 그녀와 대화하는 것을 즐기게 됐다”며 긍정적으로 평가했다. 그는 “섹스로봇의 사실성은 전시회에서나 볼 수 있는 예술품의 수준으로 진실로 친밀해질 수 있는 작품”이라고 강조했다.</span></p>
+        <p style="font-size: 17.3333px; text-align: justify;"><br></p>
+        <p style="font-size: 17.3333px; text-align: justify;"><br></p>
+        <p style="font-size: 17.3333px; text-align: justify;"><br></p>
+        <p style="font-size: 17.3333px; text-align: justify;"><br></p>
+        <p style="font-size: 17.3333px; text-align: justify;"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><i>강신 기자 xin@seoul.co.kr</i></span></p>
+        <p style="font-size: 17.3333px; text-align: justify;"><i><br></i></p>
+        <p></p>
       </div>
+
+    </div>
+  </div>
+
+
+  <p class="banner"></p>
+  <div id="bnr_area3" style="margin-top:20px; text-align:center;"></div>
+  <p></p>
+
+  <br>
+
+  <div id="recom-story">
+    <p class="tit">추천기사</p>
+
+    <div class="section_body" id="section_body" style="margin-left: 20px; margin-right: 20px;">
+      <ul class="type06">
+        <li>
+          <dl><dt class="photo"><img src="./files/recom-1.jpg" width="106" height="72" alt="" style="border: 1px solid lightgray;"></dt>
+            <dt>잇단 ‘이불 추락사’ 원인 알고보니…</dt>
+            <span class="lede">아파트 베란다에서 이불을 털다 추락해 사망하는 사고가 잇따라 발생해 각별한 주의가 요구된다. 25일 오전 9시쯤 대구 수성구 시지동의 한 아파트 7층에서 주부 A(38)씨가 추락해 ...</span>
+            <span class="writing">KBS</span>
+          </dl>
+        </li>
+        <li>
+          <dl><dt class="photo"><img src="./files/recom-2.jpg" width="106" height="72" alt="" style="border: 1px solid lightgray;"></dt>
+            <dt>밤낮 뛰는 윗집아이… 복수(?) 위해 담배 피운 아랫집</dt>
+            <span class="lede">아랫집에서 올라오는 담배연기에 괴로워하는 이들이 있습니다. 하지만 아랫집 주인이 담배를 피운 이유는 ‘윗집 층간소음에 대한 보복’이었다는데요. 최근 한 온라인 커뮤니티에 ...</span>
+            <span class="writing">국민일보</span>
+          </dl>
+        </li>
+        <li>
+          <dl><dt class="photo"><img src="./files/recom-3.jpg" width="106" height="72" alt="" style="border: 1px solid lightgray;"></dt>
+            <dt>인사이트호가 보내온 첫 사진, 화성 표면이 얼룩덜룩?</dt>
+            <span class="lede">미국항공우주국(NASA)의 화성 탐사선 ‘인사이트’호가 26일(현지시간) 적도 인근의 엘리시움 평원에 무사히 착륙했다. 인사이트는 한국시간으로 27일 오전 4시 54분 화성에 ...</span>
+            <span class="writing">중앙일보</span>
+          </dl>
+        </li>
+      </ul>
     </div>
 
+    <br><br><br><br><br>
 
-    <p class="banner">
-    </p>
-    <div id="bnr_area3" style="margin-top:20px;text-align:center;">
-    </div>
-    <p></p>
-
-    <br>
-
-    <div id="recom-story">
-      <p class="tit">추천기사</p>
-      <div class="cont">
-        <!-- Swiper -->
-        <div class="swiper-container swiper-container-vertical" style="cursor: grab;">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-slide-active" style="margin-right: 10px;">
-              <a>
-                <dl>
-                  <dt><img src="./files/7412.jpg" alt="배너이미지" class="txc-image" width="640" style="clear: none; float: none;"></dt>
-                  <dd>'제발 살려줘' 아이디 올리자 와이파이 암호 풀어준 이웃</dd>
-                </dl>
-              </a>
-            </div>
-            <div class="swiper-slide swiper-slide-next" style="margin-right: 10px;">
-              <a>
-                <dl>
-                  <dt><img src="./files/7425.jpg" alt="배너이미지" class="txc-image" width="640" style="clear: none; float: none;"></dt>
-                  <dd>이토 히로부미에 끌려가 일본군이 된 ‘마지막 황태자’</dd>
-                </dl>
-              </a>
-            </div>
-            <div class="swiper-slide" style="margin-right: 10px;">
-              <a>
-                <dl>
-                  <dt><img src="./files/6841.jpg" alt="배너이미지" class="txc-image" width="640" style="clear: none; float: none;"></dt>
-                  <dd>스마트폰 하나에 카메라 다섯 개?</dd>
-                </dl>
-              </a>
-            </div>
-            <br>
-          </div>
-          <!-- Add Scrollbar -->
-          <div class="swiper-scrollbar" style="display: none;">
-            <div class="swiper-scrollbar-drag" style="width: 0px;"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-  </div><!-- // #s-wrap -->
-  <script type="text/javascript" src="./files/jquery.ezmark.min.js"></script>
-  <script type="text/javascript">
-    $(function() {
-      // 슬라이드
-      var swiper3 = new Swiper('.swiper-container3', {
-        scrollbar: '.swiper-scrollbar',
-        slidesPerView: 3,
-        spaceBetween: 10,
-        grabCursor: true,
-        scrollbarHide: false
-      });
-
-
-      $('.reply-read a').attr("target", "_blank");
-    });
-
-
-    function fontSize() {
-      var defFontSize = 13;
-
-      if (getCookie('ziksirFont')) {
-        $('.reply-read *').css('font-size', parseInt(getCookie('ziksirFont')) + 'pt');
-        defFontSize = parseInt(getCookie('ziksirFont'));
-      }
-      $('#fontUp').click(function() {
-        $('.reply-read *').css('font-size', parseInt(defFontSize + 1) + 'pt');
-        defFontSize++;
-        setCookie('ziksirFont', defFontSize, 10000);
-      });
-      $('#fontDown').click(function() {
-        $('.reply-read *').css('font-size', parseInt(defFontSize - 1) + 'pt');
-        defFontSize--;
-        setCookie('ziksirFont', defFontSize, 10000);
-      });
-      return false;
-    }
-
-    $(document).ready(function() {
-      resize_youtube(); // youtube height resize
-      fontSize(); // 폰트 사이즈 처리
-    });
-  </script>
-
-  <script type="text/javascript" src="./files/e-smart-zoom-jquery.min.js"></script>
-  <script type="text/javascript">
-    // 이미지 확대 기능
-    $('.reply-read img.txc-image').on('click', function(e) {
-      e.preventDefault();
-      var $this = $(this),
-        $offset = $this.offset();
-
-      $('<div />', {
-        id: 'overlay-image',
-        css: {
-          position: 'absolute',
-          left: 0,
-          top: 0,
-          width: $(document).width(),
-          height: $(document).height(),
-          backgroundColor: 'rgba(0,0,0,0.5)',
-          zIndex: 100,
-          opacity: .5,
-          '-webkit-opacity': .5
-        },
-        click: function(e) {
-          e.preventDefault();
-          $(this).remove();
-          $('#zoom-image').remove();
-        }
-      }).appendTo('body');
-
-      $('<div />', {
-        id: 'zoom-image',
-        css: {
-          width: $this.width(),
-          height: $this.height(),
-          position: 'absolute',
-          left: $offset.left,
-          top: $offset.top,
-          zIndex: 101
-        },
-        html: function() {
-          $('<img />', {
-            id: 'zoomreal',
-            src: $this.attr('src'),
-            css: {
-              width: $this.width(),
-              height: $this.height()
-            }
-          }).appendTo(this);
-
-          var scaleToAdd = 0.4;
-
-          $('<div />', {
-            id: 'button-wrap',
-            css: {
-              position: 'absolute',
-              right: 0,
-              bottom: 0,
-              backgroundColor: '#fff',
-              opacity: .5
-            },
-            html: function() {
-              $('<img />', {
-                id: 'zoomInButton',
-                src: 'http://img.ziksir.com/img/pb_m/ziksir/zoomIn.gif',
-                click: function(e) {
-                  e.preventDefault();
-                  $('#zoomreal').smartZoom('zoom', scaleToAdd);
-                }
-              }).appendTo(this);
-
-              $('<img />', {
-                id: 'zoomOutButton',
-                src: 'http://img.ziksir.com/img/pb_m/ziksir/zoomOut.gif',
-                click: function(e) {
-                  e.preventDefault();
-                  $('#zoomreal').smartZoom('zoom', -scaleToAdd);
-                }
-              }).appendTo(this);
-            }
-          }).appendTo(this);
-        }
-      }).appendTo('body');
-
-      $('#zoomreal').smartZoom({
-        'containerClass': 'zoomableContainer'
-      });
-    });
-
-    // reply form toggle
-    var replyForm = function(uid) {
-      var article_uid = $('#article_uid').val();
-
-      $('#replyForm' + uid).toggle();
-      $('#replyForm' + uid + ' textarea').focus();
-    }
-
-    var page = 1;
-    var uid = "7186";
-    var loading = false;
-    var getComment = function(opt) {
-      if (opt == 'refresh') {
-        page = 1;
-      }
-    }
-
-
-    $(document).ready(function() {
-      $(window).scroll(function() {
-        //setGotop();
-        if ($(window).scrollTop() >= ($(document).height() - $(window).height() - 110) && page > 0) { //최하단의 위치값과 동일여부
-          getComment(); //스크롤페이징 ajax 호출 스크립트
-        }
-      });
-      getComment(); //스크롤페이징 ajax 호출 스크립트
-    });
-  </script>
-
-  <!-- <script src="http://www.ziksir.com/img/js/catchback.js?v=1"></script> -->
-
+  </div>
 
 </body>
 
